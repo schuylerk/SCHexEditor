@@ -1,5 +1,5 @@
-#ifndef SC_BYTE_OPERATOR_H
-#define SC_BYTE_OPERATOR_H
+#ifndef SCBYTEOPERATOR_H
+#define SCBYTEOPERATOR_H
 
 class SCByteOperator
 {
@@ -18,4 +18,4 @@ public:
     }
 };
 
-#endif // SC_BYTE_OPERATOR_H
+#endif // SCBYTEOPERATOR_H

@@ -1,5 +1,5 @@
-#ifndef SC_LINE_EDIT_H
-#define SC_LINE_EDIT_H
+#ifndef SCLINEEDIT_H
+#define SCLINEEDIT_H
 
 #include <QLineEdit>
 #include <QFocusEvent>
@@ -16,4 +16,4 @@ public:
     virtual void focusOutEvent(QFocusEvent* event);
 };
 
-#endif // SC_LINE_EDIT_H
+#endif // SCLINEEDIT_H

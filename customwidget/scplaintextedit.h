@@ -1,5 +1,5 @@
-#ifndef SC_PLAIN_TEXT_EDIT_H
-#define SC_PLAIN_TEXT_EDIT_H
+#ifndef SCPLAINTEXTEDIT_H
+#define SCPLAINTEXTEDIT_H
 
 #include <QPlainTextEdit>
 #include <QWheelEvent>
@@ -30,4 +30,4 @@ public:
     virtual void mouseDoubleClickEvent(QMouseEvent* event);
 };
 
-#endif // SC_PLAIN_TEXT_EDIT_H
+#endif // SCPLAINTEXTEDIT_H

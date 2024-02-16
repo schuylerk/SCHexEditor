@@ -1,10 +1,10 @@
-#ifndef SC_HEX_EDITOR_LOGIC_H
-#define SC_HEX_EDITOR_LOGIC_H
+#ifndef SCHEXEDITORLOGIC_H
+#define SCHEXEDITORLOGIC_H
 
-#include <sc_hex_editor_logic_interface.h>
+#include <schexeditorlogicinterface.h>
 #include <QFile>
-#include <sc_address_generator.h>
-#include <sc_byte_operator.h>
+#include <scaddressgenerator.h>
+#include <scbyteoperator.h>
 
 class SCHexEditorLogic : public SCHexEditorLogicInterface
 {
@@ -29,4 +29,4 @@ public:
     virtual int byteEditPostionInBlockWithSelectionStart(int positionInBlock);
 };
 
-#endif // SC_HEX_EDITOR_LOGIC_H
+#endif // SCHEXEDITORLOGIC_H

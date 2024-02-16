@@ -9,36 +9,34 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    launchwidget.cpp \
-    main.cpp \
-    mainwidget.cpp \
-    sc_address_generator.cpp \
-    sc_byte_operator.cpp \
-    sc_hex_editor_logic.cpp \
-    sc_line_edit.cpp \
-    sc_plain_text_edit.cpp \
-    startwidget.cpp \
+    scaddressgenerator.cpp \
+    scbyteoperator.cpp \
+    schexeditorlogic.cpp \
     userdefaults.cpp \
-    widget.cpp
+    widget.cpp \
+    main/*.cpp \
+    launch/*.cpp \
+    start/*.cpp \
+    customwidget/*.cpp
 
 HEADERS += \
-    launchwidget.h \
-    mainwidget.h \
-    sc_address_generator.h \
-    sc_byte_operator.h \
-    sc_hex_editor_logic.h \
-    sc_hex_editor_logic_interface.h \
-    sc_line_edit.h \
-    sc_plain_text_edit.h \
+    scaddressgenerator.h \
+    scbyteoperator.h \
+    schexeditorlogic.h \
+    schexeditorlogicinterface.h \
     startwidget.h \
     userdefaults.h \
-    widget.h
+    widget.h \
+    main/*.h \
+    launch/*.h \
+    start/*.h \
+    customwidget/.*h
 
 FORMS += \
-    launchwidget.ui \
-    mainwidget.ui \
-    startwidget.ui \
-    widget.ui
+    widget.ui \
+    main/*.ui \
+    launch/*.ui \
+    start/*.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

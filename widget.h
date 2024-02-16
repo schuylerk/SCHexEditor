@@ -4,17 +4,17 @@
 #include <QWidget>
 #include <QDebug>
 #include <QFile>
-#include <sc_address_generator.h>
-#include <sc_byte_operator.h>
+#include <scaddressgenerator.h>
+#include <scbyteoperator.h>
 #include <QWheelEvent>
-#include <sc_plain_text_edit.h>
+#include <scplaintextedit.h>
 #include <QMouseEvent>
-#include <sc_hex_editor_logic_interface.h>
+#include <schexeditorlogicinterface.h>
 #include <QTextBlock>
 #include <QTextDocumentFragment>
 #include <QGuiApplication>
 #include <QClipboard>
-#include <sc_line_edit.h>
+#include <sclineedit.h>
 #include <QFont>
 
 QT_BEGIN_NAMESPACE

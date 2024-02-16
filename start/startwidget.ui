@@ -54,7 +54,7 @@ background-color: rgb(73, 99, 139);</string>
      <widget class="QLabel" name="nameLabel">
       <property name="font">
        <font>
-        <pointsize>69</pointsize>
+        <pointsize>53</pointsize>
         <italic>false</italic>
         <bold>false</bold>
         <underline>false</underline>
@@ -135,7 +135,7 @@ border-radius: 5;</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>11</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="styleSheet">
@@ -183,7 +183,7 @@ border-width: 0;</string>
         <widget class="QPushButton" name="openFileButton">
          <property name="font">
           <font>
-           <pointsize>12</pointsize>
+           <pointsize>9</pointsize>
            <underline>true</underline>
           </font>
          </property>
@@ -203,7 +203,7 @@ text-align: left;</string>
         <widget class="QPushButton" name="createFileButton">
          <property name="font">
           <font>
-           <pointsize>12</pointsize>
+           <pointsize>9</pointsize>
            <underline>true</underline>
           </font>
          </property>
@@ -265,7 +265,7 @@ text-align: left;</string>
       </property>
       <property name="font">
        <font>
-        <pointsize>11</pointsize>
+        <pointsize>10</pointsize>
        </font>
       </property>
       <property name="styleSheet">

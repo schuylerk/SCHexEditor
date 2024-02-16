@@ -1,7 +1,7 @@
 #include "mainwidget.h"
 #include "ui_mainwidget.h"
 #include <QTimer>
-#include "sc_hex_editor_logic.h"
+#include "schexeditorlogic.h"
 
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent)

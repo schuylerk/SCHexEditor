@@ -1,5 +1,5 @@
-#ifndef SC_HEX_EDITOR_LOGIC_INTERFACE_H
-#define SC_HEX_EDITOR_LOGIC_INTERFACE_H
+#ifndef SCHEXEDITORLOGICINTERFACE_H
+#define SCHEXEDITORLOGICINTERFACE_H
 
 #include <QString>
 
@@ -18,4 +18,4 @@ public:
     virtual int byteEditPostionInBlockWithSelectionStart(int positionInBlock) = 0;
 };
 
-#endif // SC_HEX_EDITOR_LOGIC_INTERFACE_H
+#endif // SCHEXEDITORLOGICINTERFACE_H

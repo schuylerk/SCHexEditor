@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   <string notr="true">background-color: rgb(125, 138, 255);</string>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -52,7 +52,7 @@
       <property name="font">
        <font>
         <family>Arial</family>
-        <pointsize>108</pointsize>
+        <pointsize>76</pointsize>
         <italic>true</italic>
         <bold>false</bold>
         <underline>false</underline>
