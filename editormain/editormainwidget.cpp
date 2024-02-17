@@ -168,11 +168,12 @@ const QRect EditorMainWidget::GetRectForByteEditWhenDoubleClick()
     int currentBlockNumber = ui->hexPlainTextEdit->textCursor().blockNumber();
     QTextBlock block = ui->hexPlainTextEdit->textCursor().block();
     int positionInBlock = ui->hexPlainTextEdit->textCursor().positionInBlock();
+    qDebug() << "position in block : " << positionInBlock;
     int lineHeight = ui->hexPlainTextEdit->document()->documentLayout()->blockBoundingRect(block).height();
     qDebug() << "line height = " << lineHeight;
     int y = (currentBlockNumber - firstBlockNumber) * lineHeight;
     int yy = ui->hexPlainTextEdit->geometry().y() + ui->hexFrame->geometry().y() + y + (firstBlockNumber != 0 ? 0 : 4);
-    int xx = ui->hexPlainTextEdit->geometry().x() + 4 + (positionInBlock-2)*8 - 4;
+    int xx = ui->hexPlainTextEdit->geometry().x() + ui->hexFrame->geometry().x() + 4 + (positionInBlock-2)*8 - 4;
     int width = 16 + 8;
     int height = lineHeight; // 15 + 4;
     return QRect(xx, yy, width, height);
@@ -191,8 +192,10 @@ void EditorMainWidget::byteEditMoveToNext()
     }
     else
     {
-        int x = ui->hexPlainTextEdit->geometry().x();
-        int y = rect.y() + 8 + 7;
+        int x = ui->hexPlainTextEdit->geometry().x() + ui->hexFrame->geometry().x();
+        QTextBlock block = ui->hexPlainTextEdit->textCursor().block();
+        int lineHeight = ui->hexPlainTextEdit->document()->documentLayout()->blockBoundingRect(block).height();
+        int y = rect.y() + lineHeight;
         byteEdit->setGeometry(QRect(x, y, rect.width(), rect.height()));
     }
     byteEditPositionInBlock = (byteEditPositionInBlock + 1) % 16;
