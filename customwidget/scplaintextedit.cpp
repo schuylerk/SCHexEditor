@@ -1,4 +1,4 @@
-#include "scplaintextedit.h""
+#include "scplaintextedit.h"
 
 SCPlainTextEdit::SCPlainTextEdit(QWidget* parent)
     :QPlainTextEdit(parent)

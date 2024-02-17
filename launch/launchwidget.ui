@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(125, 138, 255);</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
@@ -59,10 +59,13 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);</string>
+       <string notr="true">color: rgb(85, 170, 255);</string>
       </property>
       <property name="text">
        <string>SCHex</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>

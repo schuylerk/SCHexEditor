@@ -7,27 +7,27 @@
 #include <scaddressgenerator.h>
 #include <scbyteoperator.h>
 #include <QWheelEvent>
-#include <scplaintextedit.h>
+#include <customwidget/scplaintextedit.h>
 #include <QMouseEvent>
 #include <schexeditorlogicinterface.h>
 #include <QTextBlock>
 #include <QTextDocumentFragment>
 #include <QGuiApplication>
 #include <QClipboard>
-#include <sclineedit.h>
+#include <customwidget/sclineedit.h>
 #include <QFont>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
 
-class Widget : public QWidget
+class EditorMainWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    Widget(SCHexEditorLogicInterface *logic, QWidget *parent = nullptr);
-    ~Widget();
+    EditorMainWidget(SCHexEditorLogicInterface *logic, QWidget *parent = nullptr);
+    ~EditorMainWidget();
 
     void configUI();
     void configConnect();
@@ -38,7 +38,7 @@ private:
     QVector<QString> copiedByteArray;
     SCLineEdit *byteEdit;
     int byteEditPositionInBlock = -1;
-    QFont font = QFont("Recursive", 14);
+    QFont font = QFont("Fixedsys", 12);
 
 private:
     const QRect GetRectForByteEditWhenDoubleClick();

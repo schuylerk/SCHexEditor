@@ -13,11 +13,13 @@ SOURCES += \
     scbyteoperator.cpp \
     schexeditorlogic.cpp \
     userdefaults.cpp \
-    widget.cpp \
-    main/*.cpp \
-    launch/*.cpp \
-    start/*.cpp \
-    customwidget/*.cpp
+    main/main.cpp \
+    main/mainwidget.cpp \
+    launch/launchwidget.cpp \
+    start/startwidget.cpp \
+    customwidget/sclineedit.cpp \
+    customwidget/scplaintextedit.cpp \
+    editormain/editormainwidget.cpp
 
 HEADERS += \
     scaddressgenerator.h \
@@ -26,17 +28,18 @@ HEADERS += \
     schexeditorlogicinterface.h \
     startwidget.h \
     userdefaults.h \
-    widget.h \
-    main/*.h \
-    launch/*.h \
-    start/*.h \
-    customwidget/.*h
+    main/mainwidget.h \
+    launch/launchwidget.h \
+    start/startwidget.h \
+    customwidget/sclineedit.h \
+    customwidget/scplaintextedit.h \
+    editormain/editormainwidget.h
 
 FORMS += \
-    widget.ui \
-    main/*.ui \
-    launch/*.ui \
-    start/*.ui
+    main/mainwidget.ui \
+    launch/launchwidget.ui \
+    start/startwidget.ui \
+    editormain/editormainwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

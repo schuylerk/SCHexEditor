@@ -2,9 +2,9 @@
 #define MAINWIDGET_H
 
 #include <QWidget>
-#include "launchwidget.h"
-#include "startwidget.h"
-#include "widget.h"
+#include "launch/launchwidget.h"
+#include "start/startwidget.h"
+#include "editormain/editormainwidget.h"
 
 namespace Ui {
 class MainWidget;
@@ -27,7 +27,7 @@ private:
 
     LaunchWidget *launchWidget; // 启动界面
     StartWidget *startWidget;
-    Widget *widget;
+    EditorMainWidget *editorMainWidget;
 };
 
 #endif // MAINWIDGET_H

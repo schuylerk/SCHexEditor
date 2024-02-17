@@ -40,6 +40,7 @@
 *.usr
 *.user
 *.pro.user.*
+*.pro.user
 *.orig
 *.autosave
 
@@ -52,4 +53,14 @@ deploy/
 # protobuf source files
 *.pb.h
 *.pb.cc
+
+.qtc_clangd/
+
+release/
+
+debug/
+
+.qmake.stash
+
+userdefaults.json
 

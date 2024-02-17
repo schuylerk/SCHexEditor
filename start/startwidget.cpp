@@ -30,7 +30,7 @@ StartWidget::~StartWidget()
 
 void StartWidget::on_openFileButton_clicked()
 {
-    QString filename = QFileDialog::getOpenFileName(this, tr("打开文件"), "./", "*.*", 0, QFileDialog::DontUseNativeDialog);
+    QString filename = QFileDialog::getOpenFileName(this, tr("打开文件"), "./", "*.*", 0);
     if (filename.isEmpty())
         return;
     emit openFile(filename);

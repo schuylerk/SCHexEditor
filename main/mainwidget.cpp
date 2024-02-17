@@ -33,7 +33,7 @@ void MainWidget::launchCompletion()
 
 void MainWidget::openFile(const QString filename)
 {
-    widget = new Widget(new SCHexEditorLogic(filename));
+    editorMainWidget = new EditorMainWidget(new SCHexEditorLogic(filename));
     startWidget->hide();
-    widget->show();
+    editorMainWidget->show();
 }
